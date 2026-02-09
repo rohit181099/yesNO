@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You Shruti ❤️</title>
+
+<style>
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+.container {
+  padding:40px 20px;
+}
+
+h1 {
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.message {
+  font-size:18px;
+  max-width:600px;
+  margin:20px auto;
+  line-height:1.6;
+}
+
+.gallery {
+  margin-top:30px;
+}
+
+.gallery img {
+  width:220px;
+  border-radius:15px;
+  margin:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.heart {
+  position:fixed;
+  top:-10px;
+  color:white;
+  animation:fall 6s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform:translateY(110vh);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Shruti ❤️</h1>
+  <h2>Will you be mine forever?</h2>
+
+  <div class="message">
+    From the day you entered my life, everything started feeling special.<br><br>
+    Your smile, your voice, your presence — they make my world complete.<br><br>
+    I don’t promise a perfect life…  
+    But I promise to love you, support you, and stand beside you always.<br><br>
+    <b>Will you stay with me in this beautiful journey? 💍</b>
+  </div>
+
+  <div class="gallery">
+    <!-- Replace with your photos -->
+    <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+  </div>
+</div>
+
+<audio autoplay loop>
+  <!-- Replace with your romantic song -->
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+/* Falling hearts */
+setInterval(()=>{
+  const heart=document.createElement("div");
+  heart.className="heart";
+  heart.innerHTML="❤";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(Math.random()*20+15)+"px";
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),6000);
+},300);
+</script>
+
+</body>
+</html>
